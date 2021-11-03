@@ -1,34 +1,64 @@
 <style>
+  body {
+    background-color: darkslateblue;
+    justify-content: center;
+  }
+
     #myTitle {
    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    color: white;
    font-size: 90px;
+   text-align: center;
    background-color: black;
    box-sizing: border-box;
+   justify-content: center;
   }
 
   .btn {
     border-style: groove;
     border-color: aqua;
+    justify-content: center;
   }
 
   .caption {
     font-style: italic;
     font-family: cursive;
+    text-align: center;
+  }
+
+  .center {
+    display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+  }
+
+  #myDiv {
+    max-width: 500px;
+    margin: auto;
+    height: 900;
+    border: 5px solid black;
+    padding: 16px;
+    
+    box-sizing: border-box;
   }
 
 </style>
-
-<h1 id="myTitle">Uverworld</h1>
-<h2 class="caption">my favorite band</h2>
+<body>
+  <div id="myDiv">
+    <h1 id="myTitle">Uverworld</h1>
+    <h2 class="caption center">my favorite band</h2>
 
 
 <br>
 
-<img class="pic" src="https://m.media-amazon.com/images/I/51mSw-ZD9eS.jpg" alt="picture of the band members of Uverworld"
+<img src="https://m.media-amazon.com/images/I/51mSw-ZD9eS.jpg" alt="picture of the band members of Uverworld" class="center">
 
 <br><br><br>
 
 <hr>
 
-<button class="btn">Click if you love them too!</button>
+<button class="btn center">Click if you love them too!</button>
+
+  </div>
+</body>
